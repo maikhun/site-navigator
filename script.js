@@ -198,11 +198,12 @@ let thirdFloor = [
                 ];
 
 const form = document.querySelector('form');
-form.addEventListener('submit', checkRoom);
+form.addEventListener('submit', checkSex);
+let name = form.querySelector('[name = "inputName"]');
 
 function checkRoom(event) {
   event.preventDefault();
-  let name = form.querySelector('[name = "inputName"]');
+  
   let lowerName = name.value.toLowerCase();
   if (firstFloor.includes(lowerName)){
     alert(`Ваш кабинет находится на первом этаже\nНужный кабинет: ${name.value}`);

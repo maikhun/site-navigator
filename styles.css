@@ -16,3 +16,7 @@ svg {
     height: 100%;
     width: 100%;
 }
+.office {
+    opacity: .05;
+    background-color: beige;
+}
